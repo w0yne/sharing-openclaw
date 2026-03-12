@@ -4,6 +4,7 @@ title: "OpenClaw — Technical Deep Dive"
 info: |
   ## OpenClaw Technical Session
   For Engineering & Technical Teams
+colorSchema: light
 drawings:
   persist: false
 transition: slide-left

@@ -3,7 +3,9 @@ theme: apple-basic
 title: "OpenClaw — The AI That Actually Does Things"
 info: |
   OpenClaw Customer Sharing
-layout: intro
+layout: intro-image-right
+image: ''
+colorSchema: light
 drawings:
   persist: false
 transition: slide-left
