@@ -77,57 +77,17 @@ layout: section
 
 # High-Level Architecture
 
-```mermaid {scale: 0.65}
-graph TD
-    subgraph Channels
-        WA[WhatsApp - Baileys]
-        TG[Telegram - grammY]
-        SL[Slack - Bolt]
-        DC[Discord - discord.js]
-        MORE[20+ more...]
-    end
-
-    subgraph Gateway["Gateway (Node.js - ws://127.0.0.1:18789)"]
-        CA[Channel Adapters]
-        SM[Session Manager]
-        TR[Tool Registry]
-        CR[Cron Engine]
-        WH[Webhook Handler]
-        SEC[Security Layer]
-        HTTP[HTTP Server - Control UI / WebChat / Canvas]
-    end
-
-    subgraph Clients
-        CLI[CLI]
-        WEB[Web UI]
-        MAC[macOS App]
-    end
-
-    subgraph Nodes
-        IOS[iOS]
-        AND[Android]
-        MACOS[macOS Node]
-    end
-
-    subgraph Agent
-        PI[Pi Agent - RPC]
-        WS[Workspace - AGENTS.md / SOUL.md / MEMORY.md]
-        SK[Skills]
-    end
-
-    WA & TG & SL & DC & MORE --> CA
-    CA --> SM
-    SM --> PI
-    PI --> TR
-    CLI & WEB & MAC --> Gateway
-    IOS & AND & MACOS --> Gateway
-    PI --> WS
-    PI --> SK
+```mermaid {scale: 0.85}
+graph LR
+    CH["📱 Channels\nWhatsApp · Telegram\nSlack · Discord · 20+"] --> GW["🖥️ Gateway\nNode.js · WebSocket\nControl Plane"]
+    GW --> AG["🧠 Agent\nPi RPC · Tools\nMemory · Skills"]
+    CL["💻 Clients\nCLI · Web UI\nmacOS App"] --> GW
+    ND["📲 Nodes\niOS · Android\nmacOS"] --> GW
 ```
 
 ---
 
-# The Gateway — Single Source of Truth
+# Gateway Internals
 
 <div class="grid grid-cols-2 gap-6">
 <div>
