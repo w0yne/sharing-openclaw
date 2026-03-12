@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-sharing",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "dev:tech": "slidev slides-tech.md --open",
+    "build": "slidev build",
+    "build:tech": "slidev build slides-tech.md --out dist-tech",
+    "export": "slidev export",
+    "export:tech": "slidev export slides-tech.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.14.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest"
+  }
+}
