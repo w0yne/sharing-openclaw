@@ -1,11 +1,9 @@
 ---
-theme: seriph
-background: https://cover.sli.dev
+theme: apple-basic
 title: "OpenClaw — Your AI That Actually Does Things"
 info: |
   ## OpenClaw Sharing
   For Product Managers, Business Teams & Decision Makers
-class: text-center
 drawings:
   persist: false
 transition: slide-left
@@ -16,18 +14,7 @@ mdc: true
 
 ## Your AI That Actually Does Things
 
-<div class="pt-12">
-  <span class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    For Product Managers, Business Teams & Decision Makers
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <a href="https://github.com/openclaw/openclaw" target="_blank" alt="GitHub" title="OpenClaw on GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+**For Product Managers, Business Teams & Decision Makers**
 
 ---
 transition: fade-out

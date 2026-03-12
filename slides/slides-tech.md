@@ -1,11 +1,9 @@
 ---
-theme: seriph
-background: https://cover.sli.dev
+theme: apple-basic
 title: "OpenClaw — Technical Deep Dive"
 info: |
   ## OpenClaw Technical Session
   For Engineering & Technical Teams
-class: text-center
 drawings:
   persist: false
 transition: slide-left
@@ -16,11 +14,7 @@ mdc: true
 
 ## Technical Deep Dive
 
-<div class="pt-12">
-  <span class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    For Engineering & Technical Teams
-  </span>
-</div>
+**For Engineering & Technical Teams**
 
 ---
 transition: fade-out
